@@ -27,7 +27,7 @@ const Contact = (props: Props) => {
         className='space-y-10 max-w-lg mx-auto'
         >
         {formFields.map(fields=>
-        <div>
+        <div key={fields.name}>
             <label htmlFor={fields.name}>
                 <input placeholder={fields.desc} type={fields.type} name={fields.name} id={fields.name}
                 className='p-2 bg-black styledBorderb border-2 rounded-md border-transparent w-full text-sm'

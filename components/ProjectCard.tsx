@@ -23,11 +23,11 @@ const ProjectCard = (props:{project:ProjectType}) => {
         <div>
         <h3 className='inline-block'>Technologies Used: </h3>
         {project.techUsed.map(tech=>
-        <p className='inline-block text-textBlue mx-2'>{tech}</p>
+        <p key={tech} className='inline-block text-textBlue mx-2'>{tech}</p>
         )}
         </div>
         {project.description.map(p=>
-        <div className='my-4 space-y-3'>
+        <div key={p} className='my-4 space-y-3'>
           <p className='bullet'>
             {p}
           </p>

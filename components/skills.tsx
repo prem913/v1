@@ -20,8 +20,8 @@ function Skills({}: Props) {
         <h1 className='title'>Skills</h1>
         <ul className='grid grid-cols-4 gap-7 my-8'>
           {skills.map(skill=>
-            <li className='text-center'>
-                <Image src={`/images/skills/${skill}.svg`} height={50} width={50} />
+            <li key={skill} className='text-center'>
+                <Image alt={skill} src={`/images/skills/${skill}.svg`} height={50} width={50} />
                 <p className=' text-textWhite text-xs capitalize'>{skill}</p>
             </li>
             )}

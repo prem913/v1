@@ -19,14 +19,14 @@ type Props = {
     children: ReactNode;
 };
 
-export function AuthProvider({ children }: Props) {
-    const value = {
+// export function AuthProvider({ children }: Props) {
+//     const value = {
 
-    }
-    return (
-        <>
-            <RefContext.Provider value={value}>
-                {children}
-            </RefContext.Provider>
-        </>
-    );
+//     }
+//     return (
+//         <>
+//             <RefContext.Provider value={value}>
+//                 {children}
+//             </RefContext.Provider>
+//         </>
+//     );
