@@ -9,9 +9,9 @@ const Navbar = (props: Props) => {
     'Contact'
   ]
   return (
-    <section className='flex justify-between items-center overflow-hidden py-2 bg-gradient-to-b from-black via-black sticky top-0 text-textDark'>
+    <section className=' z-50 flex justify-between items-center overflow-hidden py-2 bg-gradient-to-b from-black via-black sticky top-0 text-textDark'>
     <img className='h-16 w-16 scale-125' src='/images/icon.png' alt='icon' />
-    <ul className='flex items-center pr-4'>
+    <ul className='items-center pr-4 hidden md:flex'>
     {navLinks.map((link,i)=>
       <a key={i}><li className='cursor-pointer hover:text-textBlue transition-colors duration-150 group px-4'><text className='font-bold text-textBlue font-mono group-hover:text-textDark duration-150 transition-colors'>0{i+1}.</text><text>{link}</text></li></a>
     )}
