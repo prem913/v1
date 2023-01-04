@@ -24,7 +24,7 @@ body{
         @apply text-textWhite
     }
     .title{
-        @apply font-bold font-mono text-textBlue text-lg flex items-center my-8       
+        @apply font-bold font-mono text-textBlue text-lg flex items-center my-8 top-0 sticky       
     }
     .bullet{
         @apply before:content-[""] before:w-1 before:h-1 before:bg-textBlue before:inline-block before:rounded-full before:mx-2

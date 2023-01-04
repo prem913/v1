@@ -1,10 +1,21 @@
-import React from 'react'
+import anime from 'animejs'
+import React, { useEffect, useRef } from 'react'
 
 type Props = {}
 
 function Aboutme({}: Props) {
+  const cardRef=useRef<HTMLElement>(null);
+  useEffect(()=>{
+    anime({
+      targets:cardRef.current,
+      opacity:[0,1],
+      translateY:['100%',0],
+      duration:1000,
+      easing:'cubicBezier(.5, .05, .1, .3)'
+    })
+  },[])
   return (
-    <section className=' text-textDark'>
+    <section ref={cardRef} className=' text-textDark'>
         <h1 className='title'>ABOUT ME</h1>
           Hello !! Thanks for visiting my Portfolio. My name is Premchand and I am a student at NIT Raipur.
           <br /><br />
