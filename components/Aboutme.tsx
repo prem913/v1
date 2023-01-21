@@ -17,13 +17,14 @@ function Aboutme({}: Props) {
   return (
     <section ref={cardRef} className=' text-textDark'>
         <h1 className='title'>ABOUT ME</h1>
-          Hello !! Thanks for visiting my Portfolio. My name is Premchand and I am a student at NIT Raipur.
-          <br /><br />
-          While my experiences as an undergraduate have been diverse until this time. I found myself interested
-          in coding and learned many different technologies in the world of web . I want to keep learning and build things 
-          because its fun to me.
-          <br /><br />
-          Over a span of 2 years or so, I have accumulated different skills and experimented with different library, frameworks and languages
+        <p className=' leading-loose text-justify'>
+        Hello, my name is Premchand, a third-year student at the National Institute of Technology Raipur.
+         I am a full-stack developer with a passion for coding and a strong interest in the field of IT.
+         I have experience in web development, using technologies such as HTML, CSS, JavaScript, Node.js and Python.
+          I am excited to continue building my skills and experience in the field, and am always looking for new challenges and opportunities to grow as a developer. 
+          On this website, you will find a collection of my projects and accomplishments, showcasing my skills and abilities as a developer.
+           Thank you for visiting my portfolio and I look forward to connecting with you.
+           </p>
     </section>
   )
 }
